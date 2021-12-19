@@ -1,0 +1,30 @@
+12/02/21:
+Started writing some of the classes for the final project. I have started writing the User inheritance tree, and I'm realizing that the planParty() function may be redundant.
+I think my future plan is to initialize a Scanner in the main Class, and get all the input and just have an addParty() function that adds the party to the User's List.
+I discovered that I could make the dressCode aspect of my program an interface. So I implemented that into the program.
+
+12/04/21:
+I continued writing the party classes. No real problems yet. I'm sure I'll have to make some adjustments when I come across anything I may have forgotten about. I'm realizing I need to focus on MVC
+in my eventual final product because I wasn't thinking much about it when I was planning. I finished writing all the classes, and I plan on writing the final main program tomorrow.
+
+12/05/21:
+I wrote a lot of the major functionality of the program. Much of my time was spent trying to figure out how to write the objects into the .ser files. I realized that the objects had to implement
+the java.io.Serializable interface, I implemented the interface in all the objects, and now it seems there's no problem with reading and writing the files.
+
+I also realized that some of my data structures weren't the best choices. I made my guest maps for the parties have the emails of the guests as keys so that I could fill out the invite lists every 
+time a user logged in very easily. Additionally, I put in the login, logout functionality as well as the register users. I tested the registered users function by running the program to see if 
+the map data saved, and it worked! Also the login information accommodates for guests and only allows them to see if they have any invites and RSVP to them
+
+This program is looking a lot like the other favorites homework, but there's a lot more backend manipulation of data structures. 
+
+12/06/21:
+I finished the RSVP function. There was no real problem in programming this part. All I had to do was iterate through an already made invites list, then check all of the instances 
+and see if any specific modifications were needed for a specific party like asking for a food for potlucks. I plan on finishing the program in a day or two.
+
+12/07/21:
+I finished all of the remaining functions. One way or another, I managed to get all the basic functionality of the program out of the way. However, I'm running into bugs with the RSVP feature. It turns out I wrote my Party
+classes super hastily, so I need to look over those mistakes again. It's really annoying, but it's coming along well. Things that are working: login, logout, plan party, register, adding parties to invite lists, saving data 
+structures to file. Things that need fixing: RSVPing, printing current parties for hosts function should be written.
+
+I wrote a new function to print out the guest lists and the parties planned. Also, I fixed any bugs in the program. Now, I just need to fix the toString() for all of the parties and we'll be set.
+Some more testing, and I should be ready to submit.
